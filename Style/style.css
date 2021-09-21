@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(193, 235, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.accueil{
+    height: 100vh;
+    background-color: rgb(255, 207, 192);
+}
+
+.bouton{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 10px;
+    font-weight: 100;
+    font-size: 18pt;
+}
+
+.photo{
+    width: 300px;
+}
+
+.txt{
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-block-start: 0em;
+    margin-block-end: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+            "maeva"
+            "oceane"
+            "popo"
+            "benji"
+            "maddy";
+    justify-items: center;
+    text-align: center;
+}
+
+.menu{
+    background-color: rgb(171, 236, 171);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: 1s;
+    
+}
+
+.ouverture{
+    transform: translateX(0px);
+}
+
+.fermeture{
+    transform: translateX(-100%);
+}
+
+.close{
+    color: red;
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 900px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu{
+        width: 20vw;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .svg{
+        display: none;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .menu{
+        transform: translateX(0px);
+        position: static;
+    }
+
+    body{
+        display: grid;
+        
+    }
+}
