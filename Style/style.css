@@ -10,13 +10,12 @@ header{
 
 .accueil{
     height: 100vh;
+    display: flex;
     background-color: rgb(255, 207, 192);
 }
 
 .bouton{
-    position: absolute;
-    bottom: 0;
-    right: 50%;
+    margin: auto auto 0 auto;
 }
 
 
